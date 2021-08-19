@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodbox</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container bg-light fundo">
+        <div class="row justify-content-center"> <!--Topo-->
+            <div class="col-md-6">
+                <div class="topo text-center mt-1">
+                    <h1 class="text-white">Foodbox</h1>
+                    <h3 class="text-white">O combo que chega em 15 minutos!</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 justify-content-center"> <!--Prato principal-->
+            <div class="col-md-6">
+                <h4>Primeiro, o prato principal</h4>
+                <div class="row produto text-center align-items-center" id="bife" onclick="escolhePrato('bife')">
+                    <div class="col-6">
+                        <h4>Bife à milanesa</h4>
+                        <p>É isso, bife, à milanesa.</p>
+                        <h5>R$ 20,00</h5>
+                    </div>
+                    <div class="col-6 p-2">
+                        <img src="img/bife.jpg" alt="Bife à milanesa" class="img-fluid w-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+            <div class="col-md-6">
+                <div class="row produto text-center align-items-center" id="frango" onclick="escolhePrato('frango')">
+                    <div class="col-6">
+                        <h4>Frango Assado com batata</h4>
+                        <p>hmmm! Prove essa delícia.</p>
+                        <h5>R$ 20,00</h5>
+                    </div>
+                    <div class="col-6 p-2">
+                        <img src="img/frango.jpg" alt="Frango assado com batata" class="img-fluid w-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 justify-content-center"> <!--Bebida-->
+            <div class="col-md-6">
+                <h4>A sua bebida</h4>
+                <div class="row produto text-center align-items-center" id="coca" onclick="escolheBebida('coca')">
+                    <div class="col-6">
+                        <h4>Coca-cola lata</h4>
+                        <p>Bem geladinha</p>
+                        <h5>R$ 05,00</h5>
+                    </div>
+                    <div class="col-6 p-2">
+                        <img src="img/coca.jpg" alt="Coca-cola lata" class="img-fluid w-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+            <div class="col-md-6">
+                <div class="row produto text-center align-items-center" id="suco" onclick="escolheBebida('suco')">
+                    <div class="col-6">
+                        <h4>Suco natural 400ml</h4>
+                        <p>Sabor do dia.</p>
+                        <h5>R$ 04,00</h5>
+                    </div>
+                    <div class="col-6 p-2">
+                        <img src="img/suco.jpg" alt="Suco natural" class="img-fluid w-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 justify-content-center"> <!--Sobremesa-->
+            <div class="col-md-6">
+                <h4>Agora a sua sobremesa</h4>
+                <div class="row produto text-center align-items-center" id="mousse" onclick="escolheSobremesa('mousse')">
+                    <div class="col-6">
+                        <h4>Mousse</h4>
+                        <p>Chocolate ou maracujá</p>
+                        <h5>R$ 03,00</h5>
+                    </div>
+                    <div class="col-6 p-2">
+                        <img src="img/mousse.jpg" alt="Mousse" class="img-fluid w-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+            <div class="col-md-6">
+                <div class="row produto text-center align-items-center" id="torta" onclick="escolheSobremesa('torta')">
+                    <div class="col-6">
+                        <h4>Torta de Bolacha</h4>
+                        <p>Uma especialidade</p>
+                        <h5>R$ 05,00</h5>
+                    </div>
+                    <div class="col-6 p-2">
+                        <img src="img/torta.jpg" alt="Torta de bolacha" class="img-fluid w-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="enviar justify-content-center text-center m-5" id="botao" onclick="enviarCombo()">
+            <h4>Terminei meu pedido</h4>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
